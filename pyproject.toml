@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fermo-core-docs"
+version = "0.0.1"
+description = 'Documentation for fermo_core'
+readme = "README.md"
+requires-python = ">=3.11"
+license-files = { paths = ["LICENSE"] }
+authors = [
+  { name = "Mitja M. Zdouc", email = "zdoucmm@gmail.com" },
+]
+dependencies = [
+  "mkdocs-material~=9.5.23"
+]
+
+[project.urls]
+Documentation = "https://github.com/Mitja M. Zdouc/fermo-core-docs#readme"
+Issues = "https://github.com/Mitja M. Zdouc/fermo-core-docs/issues"
+Source = "https://github.com/Mitja M. Zdouc/fermo-core-docs"
