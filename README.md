@@ -17,3 +17,7 @@ See [pyproject.toml](pyproject.toml) for all project-related metadata.
 ### License
 
 See [LICENSE](LICENSE)
+
+### Authors
+
+- Mitja M. Zdouc <zdoucmm@gmail.com>

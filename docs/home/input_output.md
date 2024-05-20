@@ -102,7 +102,7 @@ The peaktable must:
 
 - Derive from liquid chromatography electrospray ionization (tandem) mass spectrometry **(LC-ESI-(MS/)MS)**
 - Constitute of samples acquired at identical **concentration/dilution** and identical **injection volume**
-- Be acquired using **untargeted** Data-dependent acquisition **(DDA)**
+- Be acquired using **untargeted** data-dependent acquisition **(DDA)**
 - Be of high resolution (ideally, **<20 ppm** mass deviation)
 - Be in a single polarity (either **positive** or **negative** ion mode)
 
