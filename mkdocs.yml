@@ -38,7 +38,7 @@ theme:
 nav:
   - Home:
       - About: index.md
-      - Why FERMO?: home/background.md
+      - Why FERMO?: home/why_fermo.md
       - Input/Output: home/input_output.md
       - Fermo GUI:
           - Usage: home/gui.usage.md
@@ -96,7 +96,7 @@ markdown_extensions:
   - admonition
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - tables
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
