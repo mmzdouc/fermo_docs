@@ -8,10 +8,7 @@ The “quantitative-concentration” module takes phenotype/bioactivity data whe
 - Both areas and reciprocals of concentration are z-transformed
 - The transformed areas and percentages are correlated using the Pearson correlation
 - The resulting p-value is corrected for multiple hypothesis testing using the Bonferroni-method (p-value * number of tested features)
-- If both correlation coefficient and p-value meet a user-specified cutoff, the phenotype information is assigned and the tested feature is considered bioactivity-associated 
-
-This method assumes a negative linear relationship between phenotype (concentration) and concentration (area of feature) - the lower the minimal inhibitory concentration, the higher the concentration.
-
+- If both correlation coefficient and p-value meet a user-specified cutoff, the phenotype information is assigned and the tested feature is considered bioactivity-associated
 
 ## Parameters
 
@@ -20,3 +17,10 @@ This method assumes a negative linear relationship between phenotype (concentrat
 - `algorithm`: specifies the statistical algorithm to use. Only `pearson` is currently allowed.
 - `p_val_cutoff`: Maximum Bonferroni-corrected p-value to consider, with zero disabling cutoff filtering for both p-value and coefficient.
 - `coeff_cutoff`: Minimum correlation coefficient to consider, with zero disabling cutoff filtering for both p-value and coefficient.
+
+
+## Limitations
+
+- This method assumes that the prerequisites with regard to sample reproducibility are met (see [Input/Output](../home/input_output.md)).
+- This method assumes a negative linear relationship between phenotype (concentration) and concentration (area of feature) - the lower the minimal inhibitory concentration, the higher the concentration.
+- This method does not take into account any synergistic or quenching effects

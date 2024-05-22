@@ -1,6 +1,8 @@
-The most important element of a `fermo_core` run is the `parameters.json` file, which specifies all files and run parameters. this file is alos generated in the background if `fermo gui` is being used. 
+The most important element of a `fermo_core` run is the `parameters.json` file, which specifies all files and run parameters. This file is also generated in the background if `fermo gui` is being used. 
 
 The `parameters.json` file follows this [**json-schema**](https://github.com/mmzdouc/fermo_core/blob/main/fermo_core/config/schema.json) and an example can be found [**here**](https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.parameters.json).
+
+`fermo_core` automatically checks the user-provided parameters file and fails with an error message if the formatting is incorrect.
 
 # Specifications `parameters.json`
 
@@ -12,11 +14,11 @@ The `parameters.json` file is separated in three parts:
 
 Detailed information on functions of parameters can be found on the **Modules** pages.
 
-## `files`
+## `files` (mandatory)
 
 *Nota bene*: If a filetype is not provided, the corresponding parameter entry must be omitted.
 
-### `peaktable`
+### `peaktable` (mandatory)
 
 <table style="width: 100%;">
  <tr>
@@ -41,7 +43,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `msms`
+### `msms` (optional)
+
+*Nota bene*: By default, fragment peaks with an intensity lower than 0.01 are removed. To disable filtering, set `rel_int_from` to `0.0`
 
 <table style="width: 100%;">
  <tr>
@@ -70,9 +74,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-*Nota bene*: By default, fragment peaks with an intensity lower than 0.01 are removed.
-
-### `phenotype`
+### `phenotype` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -92,7 +94,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `group_metadata`
+### `group_metadata` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -112,7 +114,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spectral_library`
+### `spectral_library` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -132,7 +134,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `ms2query_results`
+### `ms2query_results` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -155,7 +157,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `as_results`
+### `as_results` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -178,7 +180,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `output`
+### `output` (optional)
+
+If no output directory was provided, `fermo_core` will automatically fall back to the directory that holds the provided peaktable file and create a `results` directory into which the files will be written.
 
 <table style="width: 100%;">
  <tr>
@@ -191,13 +195,13 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">directory_path</td>
   <td style="width: 25%;"><i>(the directory path)</i></td>
   <td style="width: 25%;">True</td>
-  <td style="width: 25%;">fermo_core/results</td>
+  <td style="width: 25%;"><i>peaktable_directory</i>/results</td>
  </tr>
 </table>
 
-## `core_modules`
+## `core_modules` (optional)
 
-### `adduct_annotation`
+### `adduct_annotation` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -220,7 +224,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `neutral_loss_annotation`
+### `neutral_loss_annotation` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -249,7 +253,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `fragment_annotation`
+### `fragment_annotation` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -272,9 +276,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spec_sim_networking`
+### `spec_sim_networking` (optional)
 
-#### `modified_cosine`
+#### `modified_cosine` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -321,7 +325,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `ms2deepscore`
+#### `ms2deepscore` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -362,9 +366,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-## `additional_modules`
+## `additional_modules` (optional)
 
-### `feature_filtering`
+### `feature_filtering` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -393,7 +397,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `blank_assignment`
+### `blank_assignment` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -428,7 +432,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `group_factor_assignment`
+### `group_factor_assignment` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -457,9 +461,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `phenotype_assignment`
+### `phenotype_assignment` (optional)
 
-#### `qualitative`
+#### `qualitative` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -494,7 +498,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `quantitative-percentage`
+#### `quantitative-percentage` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -541,7 +545,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `quantitative-concentration`
+#### `quantitative-concentration` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -588,9 +592,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spectral_library_matching`
+### `spectral_library_matching` (optional)
 
-#### `modified_cosine`
+#### `modified_cosine` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -637,7 +641,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `ms2deepscore`
+#### `ms2deepscore` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -672,7 +676,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `ms2query_annotation`
+### `ms2query_annotation` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -701,9 +705,9 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `as_kcb_matching`
+### `as_kcb_matching` (optional)
 
-#### `modified_cosine`
+#### `modified_cosine` (optional)
 
 <table style="width: 100%;">
  <tr>
@@ -750,7 +754,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `ms2deepscore`
+#### `ms2deepscore` (optional)
 
 <table style="width: 100%;">
  <tr>

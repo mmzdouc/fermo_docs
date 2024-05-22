@@ -5,5 +5,7 @@ This is a short step-by-step guide on how to add new functionality:
 - If data parsing is performed, add the appropriate parser to GeneralParser. Write appropriate tests and provide example files.
 - Add an appropriate analysis class and implement it into the AnalysisManager class. Write appropriate tests.
 - Implement the appropriate export methods in the ExportManager (to json, csv, or summary). Write appropriate tests.
+- Increment the version in pyproject.toml
+- Update the online documentation with a description of the module, its algorithm, the parameters, and the limitations.
 - Implement the appropriate input forms into fermo_gui to run your module.
 - Implement appropriate search/filtering options to search for your results on fermo_gui.

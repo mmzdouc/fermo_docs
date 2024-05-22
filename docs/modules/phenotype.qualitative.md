@@ -11,3 +11,9 @@ The “qualitative” module takes phenotype/bioactivity data where samples are 
 - `factor`: the user-specified ratio (fold change) to differentiate features detected in both “positive” and “negative” samples.
 - `value`: the value used in the determination of the quotient: either “height” or “area”.
 - `algorithm`: the algorithm to summarize values over “positive” and “negative” samples. Currently possible algorithms are “mean”, “median”, and “minmax”. The latter takes the **lowest** value across “positive” samples and the **highest** value across “negative” samples
+
+
+## Limitations
+
+- Contrary to [Quantitative-Percentage](../modules/phenotype.quant-percent.md) and [Quantitative-Concentration](../modules/phenotype.quant-concentr.md), this module does not perform predictions - it rather excludes features that are unlikely to be associated with the observed phenotype.
+- This method assumes that the prerequisites with regard to sample reproducibility are met (see [Input/Output](../home/input_output.md)).

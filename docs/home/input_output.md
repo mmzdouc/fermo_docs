@@ -58,6 +58,7 @@ This is a comprehensive list of input data formats currently accepted by *FERMO*
 ## Output Data Formats
 
 To name output files, FERMO retains the name of the peaktable and adds different suffixes to indicate the type of output data.
+If no output directory was provided, `fermo_core` will automatically fall back to the directory that holds the provided peaktable file and create a `results` directory into which the files will be written.
 
 <table style="width: 100%;">
   <tr>
@@ -180,18 +181,18 @@ sampleN.mzXML
 `.csv-file` (see example below). Specifically, the file must have:
 
 - A column labeled `sample_name` specifying the sample identifiers 
-- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once
+- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays (or one assay at different concentrations).
 - Only numeric values in the `assay:...` columns
 - Measurements for at least 10 samples
 
 ```csv
-sample_name,well,assay:assay1_conc_1,assay:assay1_conc_2
-sample1.mzXML,1,6,30
-sample1.mzXML,2,-5,22
-sample2.mzXML,3,3,15
-sample2.mzXML,4,18,17
-sampleN.mzXML,M,X,Y
+sample_name,well,assay:assay1_conc1,assay:assay1_conc2,assay2_conc1
+sample1.mzXML,1,6,30,98
+sample1.mzXML,2,-5,22,80
+sample2.mzXML,3,3,15,-20
+sample2.mzXML,4,18,17,32
+sampleN.mzXML,M,X,Y,Z
 ```
 
 
@@ -200,7 +201,7 @@ sampleN.mzXML,M,X,Y
 `.csv`-file (see example below). Specifically, the file must have:
 
 - A column labeled `sample_name` specifying the sample identifiers 
-- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once
+- A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
 - One to six columns labeled with `assay:...`, which indicate different assays.
 - Only numeric values in the `assay:...` columns
 - Measurements for at least 10 samples
