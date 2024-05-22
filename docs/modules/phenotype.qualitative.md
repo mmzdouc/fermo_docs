@@ -4,7 +4,7 @@ The “qualitative” module takes phenotype/bioactivity data where samples are 
 
 - Features exclusively detected in the “positive” samples are considered phenotype/bioactivity-associated. 
 - Features exclusively detected in the “negative” samples are considered NOT phenotype/bioactivity-associated. 
-- For features detected in both “positive” and “negative” samples, a user-specified feature value (height or area) across “positive” and “negative” samples is compared using an user-specified algorithm. If the resulting quotient is greater than a user-specified ratio (fold-change), the feature is considered phenotype/bioactivity-associated; else, it is not. This allows to retain features that may be bioactivity-associated but are present in subinhibitory concentrations in the “negative” samples (lack of phenotypic/bioactivity readout).
+- For features detected in both “positive” and “negative” samples, a user-specified feature value (height or area) across “positive” and “negative” samples is compared using a user-specified algorithm. If the resulting quotient is greater than a user-specified ratio (fold-change), the feature is considered phenotype/bioactivity-associated; else, it is not. This allows to retain features that may be bioactivity-associated but are present in sub-inhibitory concentrations in the “negative” samples (lack of phenotypic/bioactivity readout). The fold-change is then registered as the phenotype score.
 
 ## Parameters
 
