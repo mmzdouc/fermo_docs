@@ -57,8 +57,10 @@ This is a comprehensive list of input data formats currently accepted by *FERMO*
 
 ## Output Data Formats
 
-To name output files, FERMO retains the name of the peaktable and adds different suffixes to indicate the type of output data.
-If no output directory was provided, `fermo_core` will automatically fall back to the directory that holds the provided peaktable file and create a `results` directory into which the files will be written.
+All output files created by *FERMO* are written into a `results` directory that is created in the directory in which the provided peaktable file resides.
+
+All output files are starting with `out.fermo` and ending with a suffix that specifies their type (see the table below):
+
 
 <table style="width: 100%;">
   <tr>

@@ -180,25 +180,6 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `output` (optional)
-
-If no output directory was provided, `fermo_core` will automatically fall back to the directory that holds the provided peaktable file and create a `results` directory into which the files will be written.
-
-<table style="width: 100%;">
- <tr>
-  <td style="width: 25%;"><b>Key</b></td>
-  <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
-  <td style="width: 25%;"><b>Default</b></td>
- </tr>
- <tr>
-  <td style="width: 25%;">directory_path</td>
-  <td style="width: 25%;"><i>(the directory path)</i></td>
-  <td style="width: 25%;">True</td>
-  <td style="width: 25%;"><i>peaktable_directory</i>/results</td>
- </tr>
-</table>
-
 ## `core_modules` (optional)
 
 ### `adduct_annotation` (optional)
