@@ -302,7 +302,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">1200</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -343,7 +343,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">1200</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -365,16 +365,28 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">false</td>
  </tr>
  <tr>
-  <td style="width: 25%;">filter_rel_int_range</td>
+  <td style="width: 25%;">filter_rel_int_range_min</td>
   <td style="width: 25%;">0.0-1.0</td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0.0-1.0</td>
+  <td style="width: 25%;">0.0</td>
  </tr>
  <tr>
-  <td style="width: 25%;">filter_rel_area_range</td>
+  <td style="width: 25%;">filter_rel_int_range_max</td>
   <td style="width: 25%;">0.0-1.0</td>
   <td style="width: 25%;">False</td>
+  <td style="width: 25%;">1.0</td>
+ </tr>
+ <tr>
+  <td style="width: 25%;">filter_rel_area_range_min</td>
   <td style="width: 25%;">0.0-1.0</td>
+  <td style="width: 25%;">False</td>
+  <td style="width: 25%;">0.0</td>
+ </tr>
+ <tr>
+  <td style="width: 25%;">filter_rel_area_range_max</td>
+  <td style="width: 25%;">0.0-1.0</td>
+  <td style="width: 25%;">False</td>
+  <td style="width: 25%;">1.0</td>
  </tr>
 </table>
 
@@ -618,7 +630,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">600</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -653,7 +665,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">600</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -682,7 +694,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">600</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -731,7 +743,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">600</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>
 
@@ -766,6 +778,6 @@ Detailed information on functions of parameters can be found on the **Modules** 
   <td style="width: 25%;">maximum_runtime</td>
   <td style="width: 25%;"> >=0 </td>
   <td style="width: 25%;">False</td>
-  <td style="width: 25%;">600</td>
+  <td style="width: 25%;">0 (unlimited)</td>
  </tr>
 </table>

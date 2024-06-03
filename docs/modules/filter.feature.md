@@ -8,5 +8,7 @@ This module filters molecular features that do not fit specified cutoff settings
 
 ## Parameters
 
-- `filter_rel_int_range`: specifies the range of relative intensity to retain in analysis
-- `filter_rel_area_range`: specifies the range of relative area to retain in analysis
+- `filter_rel_int_range_min`: specifies the minimum value of relative intensity to retain in analysis
+- `filter_rel_int_range_max`: specifies the maximum value of relative intensity to retain in analysis
+- `filter_rel_area_range_min`: specifies the minimum value of relative area to retain in analysis
+- `filter_rel_area_range_max`: specifies the maximum value of relative area to retain in analysis
