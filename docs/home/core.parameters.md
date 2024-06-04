@@ -9,16 +9,16 @@ The `parameters.json` file follows this [**json-schema**](https://github.com/mmz
 The `parameters.json` file is separated in three parts:
 
 - `files`: references to input files, paths, and locations
-- `core_modules`: modules that run by default (no specific input files except peaktable and ms/ms)
-- `additional_modules`: modules disabled by default
+- `core_modules`: modules that are generally applicable and only require a peaktable and MS/MS information (enabled by default)
+- `additional_modules`: modules requiring specific input files (disabled by default)
 
-Detailed information on functions of parameters can be found on the **Modules** pages.
+Detailed information on modules and functions of parameters can be found on the **Modules** pages.
 
 ## `files` (mandatory)
 
 *Nota bene*: If a filetype is not provided, the corresponding parameter entry must be omitted.
 
-### `peaktable` (mandatory)
+### [`peaktable` (mandatory)](./input_output.md#molecular-feature-peaktable)
 
 <table style="width: 100%;">
  <tr>
@@ -43,7 +43,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `msms` (optional)
+### [`msms` (optional)](./input_output.md#msms-spectrum-information)
 
 *Nota bene*: By default, fragment peaks with an intensity lower than 0.01 are removed. To disable filtering, set `rel_int_from` to `0.0`
 
@@ -74,7 +74,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `phenotype` (optional)
+### [`phenotype` (optional)](./input_output.md#phenotype-bioactivity-data)
 
 <table style="width: 100%;">
  <tr>
@@ -94,7 +94,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `group_metadata` (optional)
+### [`group_metadata` (optional)](./input_output.md#group-metadata)
 
 <table style="width: 100%;">
  <tr>
@@ -114,7 +114,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spectral_library` (optional)
+### [`spectral_library` (optional)](./input_output.md#spectral-library)
 
 <table style="width: 100%;">
  <tr>
@@ -134,7 +134,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `ms2query_results` (optional)
+### [`ms2query_results` (optional)](./input_output.md#ms2query-results-file)
 
 <table style="width: 100%;">
  <tr>
@@ -157,7 +157,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `as_results` (optional)
+### [`as_results` (optional)](./input_output.md#antismash-results)
 
 <table style="width: 100%;">
  <tr>
@@ -182,7 +182,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
 
 ## `core_modules` (optional)
 
-### `adduct_annotation` (optional)
+### [`adduct_annotation` (optional)](../modules/annotation.adduct.md)
 
 <table style="width: 100%;">
  <tr>
@@ -205,7 +205,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `neutral_loss_annotation` (optional)
+### [`neutral_loss_annotation` (optional)](../modules/annotation.loss.md)
 
 <table style="width: 100%;">
  <tr>
@@ -234,7 +234,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `fragment_annotation` (optional)
+### [`fragment_annotation` (optional)](../modules/annotation.fragment.md)
 
 <table style="width: 100%;">
  <tr>
@@ -257,7 +257,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spec_sim_networking` (optional)
+### [`spec_sim_networking` (optional)](../modules/networking.md)
 
 #### `modified_cosine` (optional)
 
@@ -349,7 +349,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
 
 ## `additional_modules` (optional)
 
-### `feature_filtering` (optional)
+### [`feature_filtering` (optional)](../modules/filter.feature.md)
 
 <table style="width: 100%;">
  <tr>
@@ -390,7 +390,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `blank_assignment` (optional)
+### [`blank_assignment` (optional)](../modules/metadata.blank.md)
 
 <table style="width: 100%;">
  <tr>
@@ -425,7 +425,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `group_factor_assignment` (optional)
+### [`group_factor_assignment` (optional)](../modules/metadata.group_fold.md)
 
 <table style="width: 100%;">
  <tr>
@@ -456,7 +456,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
 
 ### `phenotype_assignment` (optional)
 
-#### `qualitative` (optional)
+#### [`qualitative` (optional)](../modules/phenotype.qualitative.md)
 
 <table style="width: 100%;">
  <tr>
@@ -491,7 +491,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `quantitative-percentage` (optional)
+#### [`quantitative-percentage` (optional)](../modules/phenotype.quant-percent.md)
 
 <table style="width: 100%;">
  <tr>
@@ -538,7 +538,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-#### `quantitative-concentration` (optional)
+#### [`quantitative-concentration` (optional)](../modules/phenotype.quant-concentr.md)
 
 <table style="width: 100%;">
  <tr>
@@ -585,7 +585,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `spectral_library_matching` (optional)
+### [`spectral_library_matching` (optional)](../modules/annotation.userlib.md)
 
 #### `modified_cosine` (optional)
 
@@ -669,7 +669,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `ms2query_annotation` (optional)
+### [`ms2query_annotation` (optional)](../modules/annotation.ms2query.md)
 
 <table style="width: 100%;">
  <tr>
@@ -698,7 +698,7 @@ Detailed information on functions of parameters can be found on the **Modules** 
  </tr>
 </table>
 
-### `as_kcb_matching` (optional)
+### [`as_kcb_matching` (optional)](../modules/annotation.as_kcb.md)
 
 #### `modified_cosine` (optional)
 

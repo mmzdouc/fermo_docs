@@ -118,11 +118,11 @@ Peaktable produced by created by MZmine (version 3.x). To generate the peaktable
 
 For an example, see <a href="https://github.com/mmzdouc/fermo_core/blob/main/tests/test_data/test.peak_table_quant_full.csv" target="_blank" rel="noopener noreferrer">here</a>.
 
-### MS/MS spectrum information
+### MSMS spectrum information
 
 #### mgf(mzmine3)
 
-The MS/MS fragmentation data file is automatically generated during MZmine (version 3.x) peaktable export (see above).
+The MS/MS (MS2) fragmentation data file is automatically generated during MZmine (version 3.x) peaktable export (see above).
 
 ```
 BEGIN IONS
