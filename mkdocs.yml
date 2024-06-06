@@ -41,9 +41,11 @@ nav:
       - Why FERMO?: home/why_fermo.md
       - Input/Output: home/input_output.md
       - Fermo GUI:
+          - Overview: home/gui.overview.md
           - Usage: home/gui.usage.md
           - Installation: home/gui.installation.md
       - fermo_core:
+          - Overview: home/core.overview.md
           - Installation: home/core.installation.md
           - Usage: home/core.usage.md
           - Parameters: home/core.parameters.md

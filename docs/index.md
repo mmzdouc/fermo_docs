@@ -2,19 +2,17 @@
 
 ## FERMO Documentation
 
-This is the documentation for **FERMO**, a dashboard for metabolomics data analysis, with automated integration of genomics, phenotypical, and environmental (meta)data. 
+*FERMO* is a dashboard application for metabolomics data analysis, with automated integration of genomics, phenotypical, and environmental (meta)data. 
 
-FERMO consists of two interconnected programs:
-
-- `fermo_gui`: the dashboard graphical user interface. 
-- `fermo_core`: the data processing and analysis pipeline (the backend).
+- [*FERMO* GUI](home/gui.overview.md) describes the usage and functionality of the dashboard application.
+- [`fermo_core`](home/core.overview.md) describes the data processing and analysis functionality of *FERMO*
 
 
 ## How to use this documentation
 
-- **Home**: describes the usage of `fermo_gui` and `fermo_core` and a possible offline installation.
-- **Modules**: a reference to the individual modules integrated into *FERMO*
-- **For Developers**: materials for people interested in expanding the functionality of *FERMO*
+- **Home**: describes the usage and applicability of *FERMO*
+- **Modules**: serves as reference to the individual modules integrated into *FERMO*
+- **For Developers**: materials for people interested in expanding the functionality of *FERMO*.
 
 ## About
 
