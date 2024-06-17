@@ -73,7 +73,6 @@ Phenotype data allows to correlate feature abundance with a phenotype/bioactivit
 
 See [**here**](./input_output.md#phenotype-bioactivity-data) for more information on the required Phenotype Data file format.
 
-
 ## Spectral Library
 
 *(optional)*
@@ -90,3 +89,13 @@ This can help to reduce the chance of non-sensical spurious hits (e.g. matching 
 See [**here**](https://external.gnps2.org/gnpslibrary) for a collection of different spectral libraries.
 
 See [**here**](./input_output.md#spectral-library) for more information on the required Spectral Library file format.
+
+
+## MS2Query Annotation
+
+*(optional)*
+
+*FERMO* accepts result files coming from the [MS2Query](https://github.com/iomega/ms2query) annotation program.
+While previous versions of *FERMO* employed an inbuilt version of MS2Query, this has been discontinued due to integration issues. Therefore, MS2Query needs to be run separately by the user. 
+
+See [**here**](./input_output.md#ms2query-results-file) for more information on the required MS2Query results file format.
