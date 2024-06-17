@@ -49,7 +49,6 @@ nav:
       - fermo_core:
           - Overview: home/core.overview.md
           - Installation: home/core.installation.md
-          - Usage: home/core.usage.md
           - Parameters: home/core.parameters.md
   - Modules:
       - Modules Overview: modules/overview.md
