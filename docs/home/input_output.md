@@ -84,10 +84,6 @@ All output files are starting with `out.fermo` and ending with a suffix that spe
     <td style="width: 75%;">Modified full peaktable, can be used in downstream processing</td>
   </tr>
   <tr>
-    <td style="width: 25%;">.ms2query_results.csv</td>
-    <td style="width: 75%;">Modified MS2Query file (with added ‘id’ column), can be used as input for `fermo_core` processing</td>
-  </tr>
-  <tr>
     <td style="width: 25%;">.log</td>
     <td style="width: 75%;">A log file describing the steps performed and any warnings/errors that were registered.</td>
   </tr>

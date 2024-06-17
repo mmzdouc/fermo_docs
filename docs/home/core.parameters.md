@@ -669,35 +669,6 @@ Detailed information on modules and functions of parameters can be found on the 
  </tr>
 </table>
 
-### [`ms2query_annotation` (optional)](../modules/annotation.ms2query.md)
-
-<table style="width: 100%;">
- <tr>
-  <td style="width: 25%;"><b>Key</b></td>
-  <td style="width: 25%;"><b>Possible Values</b></td>
-  <td style="width: 25%;"><b>Required</b></td>
-  <td style="width: 25%;"><b>Default</b></td>
- </tr>
- <tr>
-  <td style="width: 25%;">activate_module</td>
-  <td style="width: 25%;">true, false</td>
-  <td style="width: 25%;">True</td>
-  <td style="width: 25%;">false</td>
- </tr>
- <tr>
-  <td style="width: 25%;">score_cutoff</td>
-  <td style="width: 25%;">0.0-1.0</td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0.7</td>
- </tr>
- <tr>
-  <td style="width: 25%;">maximum_runtime</td>
-  <td style="width: 25%;"> >=0 </td>
-  <td style="width: 25%;">False</td>
-  <td style="width: 25%;">0 (unlimited)</td>
- </tr>
-</table>
-
 ### [`as_kcb_matching` (optional)](../modules/annotation.as_kcb.md)
 
 #### `modified_cosine` (optional)
