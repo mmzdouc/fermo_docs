@@ -1,8 +1,13 @@
 ## Description
 
-This module performs filtering of MS/MS fragmentation spectra of features. MS/MS spectra regularly contain fragments caused by instrument noise, which obfuscate and prolongate the analysis. Therefore, it is recommended to remove low-intensity fragments.
+This module performs filtering of MS/MS fragmentation spectra of features. 
+MS/MS spectra regularly contain fragments caused by instrument noise, which obfuscate and prolongate the analysis. 
 
-By default, all peaks `10` Da around the precursor m/z are removed from the MS/MS spectrum before MS/MS filtering takes place. Since these fragments are unlikely to be associated with the fragmentation of the molecule, this also takes place if `rel_int_from` was set to `0.0`.
+By default, *FERMO* will quality-filter MS/MS fragments and remove the fragment corresponding to the precursor *m/z* and all fragments +- 10 *m/z* units around the precursor *m/z*.
+These fragments are usually artifacts and do not correspond to any meaningful neutral losses. 
+
+Additionally, *FERMO* can remove fragments with a relative intensity lower than a user-specified value (by default: 0.01 i.e. 1% of the base peak).
+This is recommended to remove noise peaks from the spectrum. Filtering takes place after the initial precursor *m/z* removal.
 
 ## Parameters
 
