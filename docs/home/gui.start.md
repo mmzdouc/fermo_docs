@@ -12,9 +12,9 @@ While default parameters are provided, they need to be adjusted according to the
 
 *Nota bene: *FERMO* online versions employs some restrictions with regard to file size, computation time, and data storage to prevent excessive usage. Details can be found on the 'Start Analysis' page.*
 
+#### Example
+
 ![full_run](../assets/images/screenshots/gui.start.full_run.gif){ width="60%" }
-
-
 
 ## Load parameters
 
@@ -31,9 +31,7 @@ Take the newly generated *FERMO* job ID and use it to load the parameters.
 
 #### Example
 
-![load_params.png](../assets/images/screenshots/gui.start.load_params.png){ width="60%" }
-
-![loaded_params.png](../assets/images/screenshots/gui.start.loaded_params.png){ width="60%" }
+![load_params.png](../assets/images/screenshots/gui.load_params.gif){ width="60%" }
 
 ## Peaktable
 
@@ -68,6 +66,7 @@ See [**here**](./input_output.md#group-metadata) for more information on the req
 
 Phenotype data allows to correlate feature abundance with a phenotype/bioactivity signal. 
 *FERMO* supports three different data formats/strategies:
+
 - 
 
 add additional points
