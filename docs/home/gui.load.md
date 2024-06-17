@@ -1,6 +1,6 @@
 # Usage
 
-On the 'Load Session' page, existing *FERMO* analysis jobs can be loaded.
+On the **'Load Session'** page, existing *FERMO* analysis jobs can be loaded.
 
 The job/session file can be loaded by clicking on the **'Load Session'** button at the bottom of the page.
 
@@ -18,7 +18,8 @@ Simply paste the *FERMO* job ID into the field, and click on the **'Load Session
 
 ## Session file upload
 
-This field allows to upload a previously downloaded session file. 
+This field allows to upload a previously downloaded session.json file. 
+This can also be used to reload parameters of a previous job (see [Start Analysis](./gui.start.md) for details).
 
 *Nota bene: session files from FERMO <v1.0.0 are not accepted*
 
