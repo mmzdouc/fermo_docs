@@ -45,7 +45,6 @@ nav:
           - Start Analysis: home/gui.start.md
           - Load Session: home/gui.load.md
           - Dashboard: home/gui.dashboard.md
-          - Example: home/gui.example.md
           - Installation: home/gui.installation.md
       - fermo_core:
           - Overview: home/core.overview.md

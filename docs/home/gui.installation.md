@@ -1,1 +1,1 @@
-TBA (MMZ 20.05.24)
+Detailed information on how to install and run **FERMO GUI** offline can be found in the [**README**](https://github.com/mmzdouc/fermo).
