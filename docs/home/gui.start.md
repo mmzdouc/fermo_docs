@@ -67,6 +67,26 @@ See [**here**](./input_output.md#group-metadata) for more information on the req
 Phenotype data allows to correlate feature abundance with a phenotype/bioactivity signal. 
 *FERMO* supports three different data formats/strategies:
 
-- 
+- qualitative phenotype data
+- percentage activity-based quantitative data
+- concentration-based quantitative data
 
-add additional points
+See [**here**](./input_output.md#phenotype-bioactivity-data) for more information on the required Phenotype Data file format.
+
+
+## Spectral Library
+
+*(optional)*
+
+*FERMO* accepts a user-provided spectral library for feature annotation. 
+Spectral library matching can be performed with two different algorithms: 
+
+- **Modified Cosine**: Ideal to detect close similarity.
+- **MS2DeepScore**: Can detect also distant similarity.
+
+Ideally, a library targeted towards the research question/organism is used.
+This can help to reduce the chance of non-sensical spurious hits (e.g. matching of human metabolites against a bacterial dataset.)
+
+See [**here**](https://external.gnps2.org/gnpslibrary) for a collection of different spectral libraries.
+
+See [**here**](./input_output.md#spectral-library) for more information on the required Spectral Library file format.
