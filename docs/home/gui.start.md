@@ -2,13 +2,19 @@
 
 On the 'Start Analysis' page, new *FERMO* analysis jobs can be initiated.
 
-Files can be uploaded using the individual upload fields, and the analysis job can be started by clicking on the **'Start Analysis'** button at the bottom of the page.
+Files can be uploaded using the individual upload fields. 
+
+The analysis job can be started by clicking on the **'Start Analysis'** button at the bottom of the page.
 
 The **only** file required is a **peaktable file** - all other files are optional.
 
 While default parameters are provided, they need to be adjusted according to the **requirements of the data**.
 
 *Nota bene: *FERMO* online versions employs some restrictions with regard to file size, computation time, and data storage to prevent excessive usage. Details can be found on the 'Start Analysis' page.*
+
+![full_run](../assets/images/screenshots/gui.start.full_run.gif){ width="60%" }
+
+
 
 ## Load parameters
 
@@ -25,9 +31,9 @@ Take the newly generated *FERMO* job ID and use it to load the parameters.
 
 #### Example
 
-![load_params.png](../assets/images/screenshots/gui.start.load_params.png){ width="50%" }
+![load_params.png](../assets/images/screenshots/gui.start.load_params.png){ width="60%" }
 
-<img src="../assets/images/screenshots/gui.start.loaded_params.png" alt="loaded_params.png" width="60%"/>
+![loaded_params.png](../assets/images/screenshots/gui.start.loaded_params.png){ width="60%" }
 
 ## Peaktable
 
@@ -54,7 +60,7 @@ Group Metadata allows to provide sample context information.
 Using sample grouping, the abundance of features across groups (area, intensity) can be compared. 
 Additionally, sample blanks can be designated to identify background ions.
 
-See [**here**](./input_output.md#group-metadata) for more information on the required MS/MS file format.
+See [**here**](./input_output.md#group-metadata) for more information on the required Group Metadata file format.
 
 ## Phenotype Data
 
