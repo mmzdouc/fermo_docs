@@ -3,7 +3,6 @@
 On the 'Start Analysis' page, new *FERMO* analysis jobs can be initiated.
 
 Files can be uploaded using the individual upload fields. 
-
 The analysis job can be started by clicking on the **'Start Analysis'** button at the bottom of the page.
 
 The **only** file required is a **peaktable file** - all other files are optional.
@@ -24,14 +23,14 @@ To load the parameters, simply paste the *FERMO* job ID into the field, and clic
 
 *Nota bene: files and filenames are not retained and must be newly uploaded.*
 
+#### Example
+
+![load_params.png](../assets/images/screenshots/gui.load_params.gif){ width="60%" }
+
 #### Troubleshooting
 
 If an old job ID does not exist anymore but you still want to clone the parameters, you can simply upload a previously created *FERMO* **session.json** file under [Load Session](./gui.load.md).
 Take the newly generated *FERMO* job ID and use it to load the parameters.
-
-#### Example
-
-![load_params.png](../assets/images/screenshots/gui.load_params.gif){ width="60%" }
 
 ## Peaktable
 
@@ -43,7 +42,8 @@ See [**here**](./input_output.md#molecular-feature-peaktable) for more informati
 
 *(optional)*
 
-Availability of MS/MS data is very important for annotation tasks. If MS/MS data is available, it is highly recommended to include such a file in the analysis.
+Availability of MS/MS data is very important for annotation tasks. 
+If MS/MS data is available, it is highly recommended to include such a file in the analysis.
 However, even if MS/MS data is provided, usually not all molecular features have associated MS/MS information, and *FERMO* will ignore such features in annotation tasks requiring MS/MS data.
 
 See [**here**](./input_output.md#msms-spectrum-information) for more information on the required MS/MS file format.
@@ -105,4 +105,17 @@ See [**here**](./input_output.md#ms2query-results-file) for more information on 
 *(optional)*
 
 *FERMO* can also integrate results coming from the popular genome mining software [antiSMASH](https://antismash.secondarymetabolites.org).
-For this, *FERMO* requires 
+For this, *FERMO* requires only an existing **antiSMASH job ID**.
+
+Keep in mind that only a single genome is used for annotation. 
+In this case, all samples are assumed to result from organism the genome is associated with.
+
+See [**here**](../modules/annotation.as_kcb.md) for more information on the annotation logic.
+
+See [**here**](./input_output.md#antismash-results) for more information on the required MS2Query results file format.
+
+## Notification Settings
+
+*(optional, only in online mode)*
+
+If an email address was provided, a notification will be sent on job completion (success or failure).
