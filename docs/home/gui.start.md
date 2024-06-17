@@ -99,3 +99,10 @@ See [**here**](./input_output.md#spectral-library) for more information on the r
 While previous versions of *FERMO* employed an inbuilt version of MS2Query, this has been discontinued due to integration issues. Therefore, MS2Query needs to be run separately by the user. 
 
 See [**here**](./input_output.md#ms2query-results-file) for more information on the required MS2Query results file format.
+
+## antiSMASH Job Integration
+
+*(optional)*
+
+*FERMO* can also integrate results coming from the popular genome mining software [antiSMASH](https://antismash.secondarymetabolites.org).
+For this, *FERMO* requires 

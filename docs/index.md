@@ -7,6 +7,7 @@
 - [*FERMO* GUI](home/gui.overview.md) describes the usage and functionality of the dashboard application.
 - [`fermo_core`](home/core.overview.md) describes the data processing and analysis functionality of *FERMO*
 
+This documentation has last been updated for *FERMO* version **1.0.0**.
 
 ## How to use this documentation
 

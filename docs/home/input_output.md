@@ -272,6 +272,10 @@ ms2query_model_prediction,precursor_mz_difference,precursor_mz_query_spectrum,pr
 
 ### AntiSMASH Results
 
-#### antiSMASH(KnownClusterBlast)
+#### Online
 
-A single antiSMASH results directory (at the time of writing, version 7.1) containing a `knownclusterblast` results directory.
+*FERMO* requires only an existing antiSMASH job ID, which it will use to automatically fetch the required data.
+
+#### Offline
+
+*FERMO* requires a single antiSMASH results directory (at the time of writing, version 7.1) containing a `knownclusterblast` results directory.
