@@ -2,6 +2,7 @@
 
 The documentation for the metabolomics dashboard tool *FERMO*
 
+
 ## Installation
 
 `hatch env create`
