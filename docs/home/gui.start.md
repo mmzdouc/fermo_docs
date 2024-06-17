@@ -17,14 +17,16 @@ This field allows to clone the parameter settings of a previous *FERMO* job (e.g
 
 To load the parameters, simply paste the *FERMO* job ID into the field, and click on the **'Load Job Parameters'** button.
 
-This job must still exist on the *FERMO* server (i.e. must not be older than 30 days). Also, files are not retained and must be newly uploaded.
+*Nota bene: files and filenames are not retained and must be uploaded anew*
 
 #### Example
 
-![FERMO logo](./assets/images/gifs/gui.start.load_params.gif)
+<img title="gui.start.load_params" alt="Example load params gif" src="../assets/images/gifs/gui.start.load_params.gif" width="70%">
 
 #### Troubleshooting
 
+If an old job ID does not exist anymore, but you still want to clone the parameters, you can simply upload a previously created *FERMO* **session.json** file under [Load Session](./gui.load.md).
+Take the newly generated *FERMO* job ID and use it to load the parameters.
 
 ### Peaktable
 
