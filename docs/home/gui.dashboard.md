@@ -140,6 +140,11 @@ In this example, we go through all the filters and observe how they impact the s
 
 ![full_run](../assets/images/screenshots/gui.dashboard.filters.gif){ width="60%" }
 
+### Downloads and general settings
+
+This field allows to download the individual files for storage or offline use. 
+For more information about the output files, see [**here**](./input_output.md#output-data-formats).
+
 ## Display
 
 In *FERMO* v.1.0.0, the dashboard has been completely reworked and now allows for dynamic construction of the user interface.
