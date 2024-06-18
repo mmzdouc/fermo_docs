@@ -112,7 +112,7 @@ In this case, all samples are assumed to result from organism the genome is asso
 
 See [**here**](../modules/annotation.as_kcb.md) for more information on the annotation logic.
 
-See [**here**](./input_output.md#antismash-results) for more information on the required MS2Query results file format.
+See [**here**](./input_output.md#antismash-results) for more information on the expected format.
 
 ## Notification Settings
 
