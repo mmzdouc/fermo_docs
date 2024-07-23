@@ -180,8 +180,7 @@ sampleN.mzXML
 
 - A column labeled `sample_name` specifying the sample identifiers 
 - A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
-- One to six columns labeled with `assay:...`, which indicate different assays (or one assay at different concentrations).
-- Only numeric values in the `assay:...` columns
+- One to six columns labeled with `assay:...`, which indicate different assays (or one assay at different concentrations). The values indicate the percentage inhibition measured for this sample. Negative percentages are considered as 0 (zero).
 - Measurements for at least 10 samples
 
 ```csv
@@ -200,8 +199,7 @@ sampleN.mzXML,M,X,Y,Z
 
 - A column labeled `sample_name` specifying the sample identifiers 
 - A column labeled `well` specifying the well number. Numbers in this column must be occurring only once. Note that the label `well` stands for any measurement reference (vial, rack position, etc.)
-- One to six columns labeled with `assay:...`, which indicate different assays.
-- Only numeric values in the `assay:...` columns
+- One to six columns labeled with `assay:...`, which indicate different assays. The values indicate the minimal inhibitory concentration and must be positive numbers. Samples with no measured activity are indicated with 0 (zero).
 - Measurements for at least 10 samples
 
 ```csv

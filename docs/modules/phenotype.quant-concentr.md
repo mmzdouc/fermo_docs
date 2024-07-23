@@ -1,14 +1,16 @@
 ## Description
 
-The “quantitative-concentration” module takes phenotype/bioactivity data where samples are specified at the minimum inhibitory concentration (concentration/dilution at which a phenotypic signal was still observed). Samples inactive at any concentration are specified with zero. The algorithm works as follows:
+The “quantitative-concentration” module takes phenotype/bioactivity data, with the minimum inhibitory concentration per sample specified (concentration/dilution at which a phenotypic signal was still observed).
+Samples inactive at any concentration are specified with zero. 
+The algorithm works as follows:
 
-- Duplicate measurements per sample are summarized with a user-specified algorithm (mean or median)
+- Duplicate measurements per sample are summarized with a user-specified algorithm (mean or median).
 - For each feature occurring in more than two active samples, the area per sample and the concentration measurement per sample are extracted.
-- The concentration are converted to their reciprocals (1 / measurement) or left at zero if the concentration was zero
-- Both areas and reciprocals of concentration are z-transformed
-- The transformed areas and percentages are correlated using the Pearson correlation
-- The resulting p-value is corrected for multiple hypothesis testing using the Bonferroni-method (p-value * number of tested features)
-- If both correlation coefficient and p-value meet a user-specified cutoff, the phenotype information is assigned and the tested feature is considered bioactivity-associated
+- The concentration are converted to their reciprocals (1 / measurement) or left at zero if the concentration was zero.
+- Both areas and reciprocals of concentration are z-transformed.
+- The transformed areas and percentages are correlated using the Pearson correlation.
+- The resulting p-value is corrected for multiple hypothesis testing using the Bonferroni-method (p-value * number of tested features).
+- If both correlation coefficient and p-value meet a user-specified cutoff, the phenotype information is assigned and the tested feature is considered bioactivity-associated.
 
 ## Parameters
 

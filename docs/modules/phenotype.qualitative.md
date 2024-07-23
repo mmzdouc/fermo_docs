@@ -1,6 +1,8 @@
 ## Description
 
-The “qualitative” module takes phenotype/bioactivity data where samples are specified in a binary format: “positive” or “negative”. The algorithm works as follows:
+The “qualitative” module takes qualitative phenotype/bioactivity data. 
+Samples are either considered “positive” or “negative”. 
+The algorithm works as follows:
 
 - Features exclusively detected in the “positive” samples are considered phenotype/bioactivity-associated. 
 - Features exclusively detected in the “negative” samples are considered NOT phenotype/bioactivity-associated. 
